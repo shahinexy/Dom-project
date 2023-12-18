@@ -4,21 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container max-w-7xl mx-auto">
-        <div class="login_form flex justify-center w-full mt-12">
-            <div class="w-80 bg-sky-300 px-8 py-12">
-                <input class="w-full p-1 border-2 border-sky-800 bg-sky-200" type="text" placeholder="inter your name">
-                <div class="pass flex w-full mt-5">
-                    <input class="password w-3/4 p-1 border-2 border-sky-800 bg-sky-200" type="password" placeholder="inter your password">
-                    <div class="show_hide p-1 w-1/4 text-center border-2 border-sky-800 bg-sky-200 cursor-pointer	 hover:bg-sky-700 hover:text-white">Show</div>
+    <!-- Login section  -->
+    <section>
+        <div class="container max-w-7xl mx-auto">
+            <h1 class="mt-12 mb-5 text-center text-xl">You can show and hide your password</h1>
+            <div class="login_form flex justify-center w-full ">
+                <div class="w-80 bg-sky-300 px-8 py-12">
+                    <input class="w-full p-1 border-2 border-sky-800 bg-sky-200" type="text" placeholder="inter your name">
+                    <div class="pass flex w-full mt-5">
+                        <input class="password w-3/4 p-1 border-2 border-sky-800 bg-sky-200" type="password" placeholder="inter your password">
+                        <div class="show_hide p-1 w-1/4 text-center border-2 border-sky-800 bg-sky-200 cursor-pointer	 hover:bg-sky-700 hover:text-white">Show</div>
+                    </div>
+                    <button class="w-full mt-5 border-2 border-sky-800 bg-sky-500 py-1 hover:bg-sky-700 transition-all	hover:text-white" type="submit">Submit</button>
                 </div>
-                <button class="w-full mt-5 border-2 border-sky-800 bg-sky-500 py-1 hover:bg-sky-700 transition-all	hover:text-white" type="submit">Submit</button>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- tabb section  -->
+    <section class="mt-12">
+        <div class="container max-w-7xl mx-auto">
+            <div class="tab_content">
+                <div class="tabs ">
+                    <ul class="flex gap-10">
+                        <li data-target="#about" class="active p-5 bg-slate-500 text-white hover:bg-slate-800 hover:text-green-300 cursor-pointer">About </li>
+                        <li data-target="#blog" class="  p-5 bg-slate-500 text-white hover:bg-slate-800 hover:text-green-300 cursor-pointer">Blog</li>
+                        <li data-target="#contact" class="  p-5 bg-slate-500 text-white hover:bg-slate-800 hover:text-green-300 cursor-pointer">Contact</li>
+                    </ul>
+                </div>
+                <div class="panel active p-5 bg-blue-300" id="about">
+                    <h1 class="text-xl ">About Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit est atque commodi autem optio eum ad quas! Laudantium, eius! Pariatur ut, nulla debitis officiis voluptates laboriosam eum porro ex repellendus!</p>
+                </div>
+                <div class="panel p-5 bg-red-300" id="blog">
+                    <h1 class="text-xl">blog</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit est atque commodi autem optio eum ad quas! Laudantium, eius! Pariatur ut, nulla debitis officiis voluptates laboriosam eum porro ex repellendus!</p>
+                </div>
+                <div class="panel p-5 bg-amber-300" id="contact">
+                    <h1 class="text-xl">Contact Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit est atque commodi autem optio eum ad quas! Laudantium, eius! Pariatur ut, nulla debitis officiis voluptates laboriosam eum porro ex repellendus!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <script src="main.js"></script>

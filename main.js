@@ -10,3 +10,5 @@ showHid.addEventListener('click', ()=>{
         showHid.innerText = 'Show';
     }
 })
+
+// tab section 
