@@ -11,6 +11,16 @@ showHid.addEventListener('click', ()=>{
     }
 })
 
+const submit = document.querySelector('#submit_login');
+const access = document.querySelector('.access');
+submit.addEventListener('click', (e)=>{
+    access.innerText = 'Now you have access of this page';
+    access.style.textAlign = 'center';
+    access.style.color = 'green';
+    access.style.backgroundColor = '#b3d9c9';
+    access.style.margin = '20px 0px';
+})
+
 // tab section 
 const tabs = document.querySelector('.tabs');
 const panels = document.querySelectorAll('.panel');
@@ -36,6 +46,7 @@ ul.addEventListener('click', (e)=>{
         const li = e.target.parentElement;
         li.parentElement.removeChild(li);
     }
+    newLi()
 })
 
 // - adding list - 
@@ -65,6 +76,7 @@ addList.addEventListener('submit', (e)=>{
 
 })
 
+
 // checkbox for hide list
 const hide = document.getElementById('hide');
 hide.addEventListener('change', ()=>{
@@ -74,3 +86,9 @@ hide.addEventListener('change', ()=>{
         ul.style.display = 'initial';
     }
 })
+
+// ============= Completed item list ==================
+const completedUl = document.querySelector('.completed_list ul');
+function newLi(){
+    completedUl.innerText = 'Completed delete'
+}

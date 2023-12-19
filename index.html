@@ -19,9 +19,10 @@
                         <input class="password w-3/4 p-1 border-2 border-sky-800 bg-sky-200" type="password" placeholder="inter your password">
                         <div class="show_hide p-1 w-1/4 text-center border-2 border-sky-800 bg-sky-200 cursor-pointer	 hover:bg-sky-700 hover:text-white">Show</div>
                     </div>
-                    <button class="w-full mt-5 border-2 border-sky-800 bg-sky-500 py-1 hover:bg-sky-700 transition-all	hover:text-white" type="submit">Submit</button>
+                    <button class="w-full mt-5 border-2 border-sky-800 bg-sky-500 py-1 hover:bg-sky-700 transition-all	hover:text-white" type="submit" id="submit_login">Submit</button>
                 </div>
             </div>
+            <div class="access"></div>
         </div>
     </section>
     <!-- tabb section  -->
@@ -53,11 +54,9 @@
     </section>
     <!-- to do list  -->
     <section>
-        <div class="container max-w-7xl mx-auto my-12 py-12 px-5 flex justify-center">
-            <div class="search_area w-5/12 p-5 bg-violet-500">
-                <form class="search_fild my-8">
-                    <input class="py-1 px-5 border-2 border-purple-700 bg-purple-200" type="text" placeholder="search hear..">
-                </form>
+        <div class="container max-w-7xl mx-auto my-12 py-12 px-5 flex justify-center gap-5">
+            <div class="search_area md:w-5/12 w-full  p-5 bg-violet-500">
+                <h1 class="text-center text-2xl font-semibold my-5">To DO List</h1>
                 <ul>
                     <li class="flex gap-5 my-2">
                         <p class="w-5/6 text-xl border-b-2 border-purple-400">1st list item</p>
@@ -84,6 +83,11 @@
                     <input class="py-2 px-5 border-2 border-purple-700 bg-purple-200" type="text" placeholder="add new item">
                     <button class="py-2 px-5 rounded bg-purple-800 border-2 border-purple-950" type="submit">Add</button>
                 </form> 
+            </div>
+            <div class="completed_list md:w-4/12 w-full p-5 bg-violet-500">
+                <ul>
+
+                </ul>
             </div>
         </div>
     </section>
