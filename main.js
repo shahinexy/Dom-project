@@ -65,3 +65,12 @@ addList.addEventListener('submit', (e)=>{
 
 })
 
+// checkbox for hide list
+const hide = document.getElementById('hide');
+hide.addEventListener('change', ()=>{
+    if(hide.checked){
+        ul.style.display = 'none';
+    } else{
+        ul.style.display = 'initial';
+    }
+})
