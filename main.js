@@ -39,14 +39,21 @@ tabs.addEventListener('click', (e)=>{
 
 
 // == Search section ==
-// delete button
+// Done & delete button
 const ul = document.querySelector('.search_area ul');
+const completedUl = document.querySelector('.completed_list ul');
+const deleted = document.querySelector('.delete');
 ul.addEventListener('click', (e)=>{
+    if(e.target.classList.contains('done')){
+        const li = e.target.parentElement;
+        const remove = li.parentElement.removeChild(li);
+        completedUl.appendChild(remove);
+        completedUl.removeChild(deleted)
+    }
     if(e.target.classList.contains('delete')){
         const li = e.target.parentElement;
         li.parentElement.removeChild(li);
     }
-    newLi()
 })
 
 // - adding list - 
@@ -59,19 +66,23 @@ addList.addEventListener('submit', (e)=>{
     const newLi = document.createElement('li');
     const newP = document.createElement('p');
     const newBtn = document.createElement('button');
+    const deleteBtn = document.createElement('button');
 
     // add content 
     newP.innerText = value;
-    newBtn.innerText = 'delete';
+    newBtn.innerText = 'Done';
+    deleteBtn.innerText = 'Delete';
 
     // add class
     newLi.classList.add('flex', 'gap-5', 'my-2')
-    newP.classList.add('w-5/6', 'text-xl', 'border-b-2','border-purple-400')
-    newBtn.classList.add('delete', 'w-1/6','text-xl', 'p-1', 'rounded', 'bg-purple-600')
+    newP.classList.add('w-4/6', 'text-xl', 'border-b-2','border-purple-400')
+    newBtn.classList.add('done', 'w-1/6','text-xl', 'p-1', 'rounded', 'bg-green-800')
+    deleteBtn.classList.add('delete', 'w-1/6','text-xl', 'p-1', 'rounded', 'bg-purple-600')
 
     // append child
     newLi.appendChild(newP);
     newLi.appendChild(newBtn);
+    newLi.appendChild(deleteBtn);
     ul.appendChild(newLi);
 
 })
@@ -88,7 +99,8 @@ hide.addEventListener('change', ()=>{
 })
 
 // ============= Completed item list ==================
-const completedUl = document.querySelector('.completed_list ul');
-function newLi(){
-    completedUl.innerText = 'Completed delete'
-}
+// const completedUl = document.querySelector('.completed_list ul');
+// function newLi(){
+//     completedUl.innerText = 'Completed delete'
+// }
+

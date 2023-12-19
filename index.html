@@ -27,7 +27,7 @@
     </section>
     <!-- tabb section  -->
     <section class="mt-12">
-        <div class="container max-w-7xl mx-auto bg-emerald-300 py-10 px-5">
+        <div class="container max-w-7xl mx-auto bg-emerald-100 py-10 px-5">
             <h2 class="text-xl text-center font-semibold p-5">Tabb Content</h2>
             <div class="tab_content">
                 <div class="tabs ">
@@ -54,24 +54,28 @@
     </section>
     <!-- to do list  -->
     <section>
-        <div class="container max-w-7xl mx-auto my-12 py-12 px-5 flex justify-center gap-5">
-            <div class="search_area md:w-5/12 w-full  p-5 bg-violet-500">
+        <div class="container max-w-7xl mx-auto my-12 py-12 px-5 flex md:flex-row flex-col md:items-start items-center justify-center gap-5">
+            <div class="search_area md:w-8/12 w-11/12  p-5 bg-violet-500">
                 <h1 class="text-center text-2xl font-semibold my-5">To DO List</h1>
                 <ul>
                     <li class="flex gap-5 my-2">
-                        <p class="w-5/6 text-xl border-b-2 border-purple-400">1st list item</p>
+                        <p class="w-4/6 text-xl border-b-2 border-purple-400">1st list item</p>
+                        <button class="done w-1/6 text-xl p-1 rounded bg-green-800" type="button">Done</button>
                         <button class="delete w-1/6 text-xl p-1 rounded bg-purple-600" type="button">Delete</button>
                     </li>
                     <li class="flex gap-5 my-2">
-                        <p class="w-5/6 text-xl border-b-2 border-purple-400">2nd list item</p>
+                        <p class="w-4/6 text-xl border-b-2 border-purple-400">2nd list item</p>
+                        <button class="done w-1/6 text-xl p-1 rounded bg-green-800" type="button">Done</button>
                         <button class="delete w-1/6 text-xl p-1 rounded bg-purple-600" type="button">Delete</button>
                     </li>
                     <li class="flex gap-5 my-2">
-                        <p class="w-5/6 text-xl border-b-2 border-purple-400">3rd list item</p>
+                        <p class="w-4/6 text-xl border-b-2 border-purple-400">3rd list item</p>
+                        <button class="done w-1/6 text-xl p-1 rounded bg-green-800" type="button">Done</button>
                         <button class="delete w-1/6 text-xl p-1 rounded bg-purple-600" type="button">Delete</button>
                     </li>
                     <li class="flex gap-5 my-2">
-                        <p class="w-5/6 text-xl border-b-2 border-purple-400">4th list item</p>
+                        <p class="w-4/6 text-xl border-b-2 border-purple-400">4th list item</p>
+                        <button class="done w-1/6 text-xl p-1 rounded bg-green-800" type="button">Done</button>
                         <button class="delete w-1/6 text-xl p-1 rounded bg-purple-600" type="button">Delete</button>
                     </li>
                 </ul>
@@ -84,7 +88,8 @@
                     <button class="py-2 px-5 rounded bg-purple-800 border-2 border-purple-950" type="submit">Add</button>
                 </form> 
             </div>
-            <div class="completed_list md:w-4/12 w-full p-5 bg-violet-500">
+            <div class="completed_list md:w-4/12 w-11/12 p-5 bg-violet-500">
+                <h1 class="text-center text-2xl font-semibold my-5">Completed List</h1>
                 <ul>
 
                 </ul>
