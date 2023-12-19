@@ -48,7 +48,7 @@ ul.addEventListener('click', (e)=>{
         const li = e.target.parentElement;
         const remove = li.parentElement.removeChild(li);
         completedUl.appendChild(remove);
-        completedUl.removeChild(deleted)
+        // deleted.parentElement.removeChild(deleted)
     }
     if(e.target.classList.contains('delete')){
         const li = e.target.parentElement;
@@ -75,9 +75,9 @@ addList.addEventListener('submit', (e)=>{
 
     // add class
     newLi.classList.add('flex', 'gap-5', 'my-2')
-    newP.classList.add('w-4/6', 'text-xl', 'border-b-2','border-purple-400')
-    newBtn.classList.add('done', 'w-1/6','text-xl', 'p-1', 'rounded', 'bg-green-800')
-    deleteBtn.classList.add('delete', 'w-1/6','text-xl', 'p-1', 'rounded', 'bg-purple-600')
+    newP.classList.add('w-4/6', 'md:text-xl', 'text-lg', 'border-b-2','border-purple-400')
+    newBtn.classList.add('done', 'w-1/6','md:text-xl', 'text-lg', 'p-1', 'rounded', 'bg-green-800')
+    deleteBtn.classList.add('delete', 'w-1/6','md:text-xl','text-lg', 'p-1', 'rounded', 'bg-purple-600')
 
     // append child
     newLi.appendChild(newP);
