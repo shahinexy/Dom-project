@@ -27,3 +27,13 @@ tabs.addEventListener('click', (e)=>{
     }
 })
 
+
+// == Search section ==
+const ul = document.querySelector('.search_area ul');
+ul.addEventListener('click', (e)=>{
+    if(e.target.classList.contains('delete')){
+        const li = e.target.parentElement;
+        li.parentElement.removeChild(li);
+    }
+})
+
